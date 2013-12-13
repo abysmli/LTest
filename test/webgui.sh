@@ -1,0 +1,2 @@
+./fastbuild.sh
+./ltest -W

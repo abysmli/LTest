@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <schema targetNamespace="http://tempuri.org/ns.xsd"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns="http://tempuri.org/ns.xsd"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  elementFormDefault="unqualified"
+  attributeFormDefault="unqualified">
+  <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+  <complexType name="Array24Ofbyte">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="xsd:byte[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+  <complexType name="Array12Ofbyte">
+   <complexContent>
+    <restriction base="SOAP-ENC:Array">
+     <attribute ref="SOAP-ENC:arrayType" WSDL:arrayType="xsd:byte[]"/>
+    </restriction>
+   </complexContent>
+  </complexType>
+  <!-- operation request element -->
+  <element name="Port">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="PortResponse">
+   <complexType>
+    <sequence>
+     <element name="pPort" type="xsd:unsignedShort" minOccurs="1" maxOccurs="1"/><!-- ns__Port::pPort -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="release-ssession">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="release-ssessionResponse">
+   <complexType>
+    <sequence>
+     <element name="response" type="ns:ReleaseSSessionResponse" minOccurs="1" maxOccurs="1"/><!-- ns__release_ssession::response -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="release-rsession">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="release-rsessionResponse">
+   <complexType>
+    <sequence>
+     <element name="response" type="ns:ReleaseRSessionResponse" minOccurs="1" maxOccurs="1"/><!-- ns__release_rsession::response -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="get-samples-whole">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="get-samples-wholeResponse">
+   <complexType>
+    <sequence>
+     <element name="GetSampleList" type="ns:whole-sample-t" minOccurs="1" maxOccurs="unbounded"/><!-- ns__get_samples_whole::GetSampleList -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="getBasicSourceStats">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="getBasicSourceStatsResponse">
+   <complexType>
+    <sequence>
+     <element name="GetBasicSourceStatics" type="ns:BasicSourceStats-t" minOccurs="1" maxOccurs="1"/><!-- ns__getBasicSourceStats::GetBasicSourceStatics -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="get-samples">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="get-samplesResponse">
+   <complexType>
+    <sequence>
+     <element name="sample-list-t" type="ns:sample-t" minOccurs="1" maxOccurs="unbounded"/><!-- ns__get_samples::sample_list_t -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="finish-session">
+   <complexType>
+    <sequence>
+     <element name="pLastSeqNo" type="xsd:unsignedInt" minOccurs="1" maxOccurs="1"/><!-- ns__finish_session::pLastSeqNo -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="finish-sessionResponse">
+   <complexType>
+    <sequence>
+     <element name="response" type="ns:FinishSessionResponse" minOccurs="1" maxOccurs="1"/><!-- ns__finish_session::response -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="get-time-by-gsoap">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="get-time-by-gsoapResponse">
+   <complexType>
+    <sequence>
+     <element name="ptv" type="ns:tv-type" minOccurs="1" maxOccurs="1"/><!-- ns__get_time_by_gsoap::ptv -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="start-UDP-time-port">
+   <complexType>
+    <sequence>
+     <element name="pPort" type="xsd:unsignedShort" minOccurs="1" maxOccurs="1"/><!-- ns__start_UDP_time_port::pPort -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="start-UDP-time-portResponse">
+   <complexType>
+    <sequence>
+     <element name="OPort" type="xsd:unsignedShort" minOccurs="1" maxOccurs="1"/><!-- ns__start_UDP_time_port::OPort -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="release-UDP-time-port">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="release-UDP-time-portResponse">
+   <complexType>
+    <sequence>
+     <element name="response" type="ns:ReleaseUDPTimePortResponse" minOccurs="1" maxOccurs="1"/><!-- ns__release_UDP_time_port::response -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="start-rsession">
+   <complexType>
+    <sequence>
+     <element name="sDec" type="ns:sourceDesc-t" minOccurs="1" maxOccurs="1"/><!-- ns__start_rsession::sDec -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="start-rsessionResponse">
+   <complexType>
+    <sequence>
+     <element name="response" type="ns:StartRSessionResponse" minOccurs="1" maxOccurs="1"/><!-- ns__start_rsession::response -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="start-ssession">
+   <complexType>
+    <sequence>
+     <element name="sDec" type="ns:sourceDesc-t" minOccurs="1" maxOccurs="1"/><!-- ns__start_ssession::sDec -->
+     <element name="senderDesc" type="ns:senderDesc-t" minOccurs="1" maxOccurs="1"/><!-- ns__start_ssession::senderDesc -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="start-ssessionResponse">
+   <complexType>
+    <sequence>
+     <element name="response" type="ns:StartSSessionResponse" minOccurs="1" maxOccurs="1"/><!-- ns__start_ssession::response -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="print-sDesc">
+   <complexType>
+    <sequence>
+     <element name="sDec" type="ns:sourceDesc-t" minOccurs="1" maxOccurs="1"/><!-- ns__print_sDesc::sDec -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="print-sDescResponse">
+   <complexType>
+    <sequence>
+     <element name="str" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- ns__print_sDesc::str -->
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation request element -->
+  <element name="ping">
+   <complexType>
+    <sequence>
+    </sequence>
+   </complexType>
+  </element>
+  <!-- operation response element -->
+  <element name="pingResponse">
+   <complexType>
+    <sequence>
+     <element name="response" type="ns:PingResponse" minOccurs="1" maxOccurs="1"/><!-- ns__ping::response -->
+    </sequence>
+   </complexType>
+  </element>
+ </schema>
+

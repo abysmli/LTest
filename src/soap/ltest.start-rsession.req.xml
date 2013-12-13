@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns="http://tempuri.org/ns.xsd">
+ <SOAP-ENV:Body>
+  <ns:start-rsession>
+   <sDec>
+    <StartTime>
+     <tv-sec>0</tv-sec>
+     <tv-usec>0</tv-usec>
+    </StartTime>
+    <StopTime>
+     <tv-sec>0</tv-sec>
+     <tv-usec>0</tv-usec>
+    </StopTime>
+    <sample-n>0</sample-n>
+    <maxPDUSize>0</maxPDUSize>
+    <ListenAddr>0</ListenAddr>
+    <ListenPort>0</ListenPort>
+    <Proto>P-TCP</Proto>
+    <Prio>0</Prio>
+    <TOS>0</TOS>
+    <Block>false</Block>
+    <SockOpts>
+     <key></key>
+     <value>0</value>
+    </SockOpts>
+    <SockOpts>
+     <key></key>
+     <value>0</value>
+    </SockOpts>
+   </sDec>
+  </ns:start-rsession>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

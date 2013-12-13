@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns="http://tempuri.org/ns.xsd">
+ <SOAP-ENV:Body>
+  <ns:getBasicSourceStatsResponse>
+   <GetBasicSourceStatics>
+    <StartTime>
+     <tv-sec>0</tv-sec>
+     <tv-usec>0</tv-usec>
+    </StartTime>
+    <Duration>
+     <tv-sec>0</tv-sec>
+     <tv-usec>0</tv-usec>
+    </Duration>
+    <FinishTime>
+     <tv-sec>0</tv-sec>
+     <tv-usec>0</tv-usec>
+    </FinishTime>
+    <SentPackets>0</SentPackets>
+    <SentBytes>0</SentBytes>
+    <RecvPackets>0</RecvPackets>
+    <RecvBytes>0</RecvBytes>
+    <Duplicates>0</Duplicates>
+    <Reordered>0</Reordered>
+    <Corrupted>0</Corrupted>
+    <DeltaTime>0</DeltaTime>
+   </GetBasicSourceStatics>
+  </ns:getBasicSourceStatsResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
